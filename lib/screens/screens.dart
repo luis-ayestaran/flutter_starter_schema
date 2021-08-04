@@ -1,1 +1,1 @@
-export 'package:flutter_components_basics/screens/home_screen.dart';
+export 'package:flutter_starter_schema/screens/home_screen.dart';

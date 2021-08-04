@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_components_basics/theme/theme.dart';
+import 'package:flutter_starter_schema/theme/theme.dart';
+import 'package:flutter_starter_schema/utils/target_platforms.dart';
+import 'package:flutter_starter_schema/widgets/widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key? key}) : super(key: key);
@@ -14,22 +16,25 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     
-    setFullScreen();
-
-    setStatusBarStyle( 
-      statusBarColor: Colors.transparent, 
-      statusBarBrightness: Brightness.light,
-      
-      navigationBarColor: Colors.transparent, 
-      navigationBarDividerColor: Colors.transparent,
-      navigationBarIconBrightness: Brightness.light
-    );
+    setFullScreen( context );
 
     return Scaffold(
-      body: Center(
-        child: Container(
-          child: Text('Hola mundo', style: Theme.of(context).textTheme.headline3, ),
-        ),
+      body: Column(
+        children: [
+          if( platform.isDesktop() ) DesktopTitleBar( title: 'App de prueba' ),
+          Expanded(
+            child: Scaffold(
+              appBar: AppBar(
+                title: Text( 'Hola mundo' ),
+                brightness: Theme.of(context).brightness,
+                iconTheme: Theme.of(context).iconTheme,
+              ),
+              body: Center(
+                child: Text( 'Hola mundo', style: Theme.of(context).textTheme.headline3, ),
+              ),
+            ),
+          )
+        ],
       ),
     );
   }

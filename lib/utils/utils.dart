@@ -1,1 +1,1 @@
-export 'package:flutter_components_basics/utils/responsive_screen.dart';
+export 'package:flutter_starter_schema/utils/responsive_screen.dart';

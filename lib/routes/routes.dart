@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_components_basics/screens/screens.dart';
+import 'package:flutter_starter_schema/screens/screens.dart';
 
 typedef AppRoutes = Map<String, WidgetBuilder>;
 

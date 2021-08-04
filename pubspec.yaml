@@ -1,4 +1,4 @@
-name: flutter_components_basics
+name: flutter_starter_schema
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -29,11 +29,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations: # Add this line
+    sdk: flutter         # Add this line
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  bitsdojo_window: ^0.1.1+1
+  shared_preferences: ^2.0.6
+  flutter_native_splash: ^1.2.0
 
 dev_dependencies:
   flutter_test:
@@ -58,9 +63,10 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/data/
+    - assets/images/
+    - assets/images/logo/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
