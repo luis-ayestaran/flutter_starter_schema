@@ -19,7 +19,7 @@ flutter_native_splash:
 
   # The image parameter allows you to specify an image used in the splash screen.  It must be a 
   # png file.  
-  image: assets/images/logo/HQ/zindey-punto-venta-logo-light.png
+  #image: assets/images/logo/HQ/zindey-punto-venta-logo-light.png
   # The color_dark, background_image_dark, and image_dark are parameters that set the background
   # and image when the device is in dark mode. If they are not specified, the app will use the
   # parameters from above. If the image_dark parameter is specified, color_dark or 
@@ -27,7 +27,7 @@ flutter_native_splash:
   # set.
   color_dark: "#111111"
   #background_image_dark: "assets/dark-background.png"
-  image_dark: assets/images/logo/HQ/zindey-punto-venta-logo-dark.png
+  #image_dark: assets/images/logo/HQ/zindey-punto-venta-logo-dark.png
 
   # The android, ios and web parameters can be used to disable generating a splash screen on a given 
   # platform.
