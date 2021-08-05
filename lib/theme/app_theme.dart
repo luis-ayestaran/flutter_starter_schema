@@ -95,7 +95,7 @@ ThemeData buildLightThemeData() => ThemeData(
 
   colorScheme: _buildLightColorScheme(),
   
-  fontFamily: 'DMSans',
+  fontFamily: 'Montserrat',
   primaryTextTheme: _buildLightPrimaryTextTheme(),
   textTheme: _buildLightTextTheme(),
   iconTheme: _buildLightIconTheme(),
@@ -128,7 +128,7 @@ ThemeData buildDarkThemeData() => ThemeData(
 
   colorScheme: _buildDarkColorScheme(),
   
-  fontFamily: 'DMSans',
+  fontFamily: 'Montserrat',
   primaryTextTheme: _buildDarkPrimaryTextTheme(),
   textTheme: _buildDarkTextTheme(),
   iconTheme: _buildDarkIconTheme(),
@@ -407,9 +407,9 @@ FloatingActionButtonThemeData _buildFloatingActionButtonTheme({
 }) => FloatingActionButtonThemeData(
   backgroundColor: backgroundColor,
   foregroundColor: foregroundColor,
-  hoverColor: hoverColor,
+  /*hoverColor: hoverColor,
   focusColor: focusColor,
-  splashColor: splashColor,
+  splashColor: splashColor,*/
   disabledElevation: 0,
   elevation: 10,
   hoverElevation: 12,

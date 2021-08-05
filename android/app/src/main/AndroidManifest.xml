@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_components_basics">
+    package="com.example.flutter_starter_schema">
    <application
-        android:label="flutter_components_basics"
+        android:label="flutter_starter_schema"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
